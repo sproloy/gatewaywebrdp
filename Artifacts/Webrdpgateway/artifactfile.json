@@ -1,0 +1,12 @@
+{
+    "$schema": "https://github.com/sproloy/gatewaywebrdp/tree/master/Artifacts/Webrdpgateway",
+    "title": "web rdp gateway",
+    "description": "web rdp gateway",
+    "tags": [
+        "Windows"
+    ],
+    "targetOsType": "Windows",
+    "runCommand": {
+        "commandToExecute": "powershell.exe -ExecutionPolicy bypass -File webrdp.ps1"
+    }
+}
