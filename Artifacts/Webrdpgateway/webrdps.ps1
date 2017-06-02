@@ -42,6 +42,16 @@ if((Test-Path "$setupFolder\webRDP-Gateway_1.2.0.43-Win-64.exe") -eq $false)
     }    
 }
 
+#download license
+if((Test-Path "$setupFolder\G7_CR_Technologies-license.swl") -eq $false)
+{
+    Write-Host "Downloading Webrdp license file.."
+    if ($os_type -eq "True"){
+        Download-File "https://bedofrazors-my.sharepoint.com/personal/pro_bedofrazors_onmicrosoft_com/_layouts/15/guestaccess.aspx?docid=18ca37386b0f9422ba607060fdf7d8d26&authkey=AUXZxSkXPGlf_dK-w-vYogo" "$setupFolder\G7_CR_Technologies-license.swl"
+    }else {
+        Write-Host "32 Bit system is not supported"
+    }    
+}
 # Prepare Configuration file
 Write-Host "Preparing configuration file.."
 if((Test-Path "$setupFolder\webrdp.ini") -eq $false)
