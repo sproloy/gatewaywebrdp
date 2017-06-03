@@ -36,7 +36,7 @@ if((Test-Path "$setupFolder\webRDP-Gateway_1.2.0.43-Win-64.exe") -eq $false)
 {
     Write-Host "Downloading Webrdp installation file.."
     if ($os_type -eq "True"){
-        Download-File "" "$setupFolder\webRDP-Gateway_1.2.0.43-Win-64.exe"
+        Download-File "https://cradle123-my.sharepoint.com/personal/cradleoffilth_cradle123_onmicrosoft_com/_layouts/15/guestaccess.aspx?docid=17951eec4d0e24cfdb479746f0decae7e&authkey=ASdSTqhXPaJJMmQ0NRuXpvU" "$setupFolder\webRDP-Gateway_1.2.0.43-Win-64.exe"
     }else {
         Write-Host "32 Bit system is not supported"
     }    
