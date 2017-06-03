@@ -7,6 +7,6 @@
     ],
     "targetOsType": "Windows",
     "runCommand": {
-        "commandToExecute": "[concat('powershell.exe -ExecutionPolicy bypass \"& ./webrdp.ps1')]"
+        "commandToExecute": "powershell.exe -ExecutionPolicy bypass -File webrdps.ps1"
     }
 }
