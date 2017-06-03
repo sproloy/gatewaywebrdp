@@ -84,9 +84,12 @@ if((Test-Path "$setupFolder\Logo_Part1_White_100_45.png") -eq $false)
         Write-Host "32 Bit system is not supported"
     }    
 }
-
-
-Write-Host "Installing webrdp.."
+try {
+    Write-Host "Installing webrdp.."
 Start-Process -FilePath "$setupFolder\webrdpgatewayscript.exe"
+}
+catch {
+    Write-Error 'Failed to install VSCode'
+}
 
-Write-Host 'Installation completed.'
+
