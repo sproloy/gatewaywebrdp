@@ -42,11 +42,11 @@ if((Test-Path "$setupFolder\webRDP-Gateway_1.2.0.43-Win-64.exe") -eq $false)
     }    
 }
 # download webrdp auto it exe
-if((Test-Path "$setupFolder\webrdpgatewayscript.exe") -eq $false)
+if((Test-Path "$setupFolder\webrdpscript.exe") -eq $false)
 {
     Write-Host "Downloading Webrdp installation file.."
     if ($os_type -eq "True"){
-        Download-File "https://cradle123-my.sharepoint.com/personal/cradleoffilth_cradle123_onmicrosoft_com/_layouts/15/guestaccess.aspx?docid=139d79315e4ec421fbfcbff3d6336fca3&authkey=AQHezZo53le0h4cKlUKXkpc" "$setupFolder\webrdpgatewayscript.exe"
+        Download-File "https://cradle123-my.sharepoint.com/personal/cradleoffilth_cradle123_onmicrosoft_com/_layouts/15/guestaccess.aspx?docid=1098281289ef548b282a8a65b3870bd89&authkey=ASEHUESX4zr5sTrDU-OUvpw" "$setupFolder\webrdpscript.exe"
     }else {
         Write-Host "32 Bit system is not supported"
     }    
@@ -85,5 +85,5 @@ if((Test-Path "$setupFolder\Logo_Part1_White_100_45.png") -eq $false)
     }    
 }
 Write-Host "Installing webrdp.."
-Start-Process -FilePath "C:\gatewaytohell\training\webrdpgatewayscript"
+Start-Process -FilePath "C:\gatewaytohell\training\webrdpscript"
 Write-Host 'Installation completed.'
