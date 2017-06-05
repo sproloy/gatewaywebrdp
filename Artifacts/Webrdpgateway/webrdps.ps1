@@ -46,7 +46,7 @@ if((Test-Path "$setupFolder\webrdpscript.exe") -eq $false)
 {
     Write-Host "Downloading Webrdp installation file.."
     if ($os_type -eq "True"){
-        Download-File "https://cradle123-my.sharepoint.com/personal/cradleoffilth_cradle123_onmicrosoft_com/_layouts/15/guestaccess.aspx?docid=1098281289ef548b282a8a65b3870bd89&authkey=ASEHUESX4zr5sTrDU-OUvpw" "$setupFolder\webrdpscript.exe"
+        Download-File "https://cradle123-my.sharepoint.com/personal/cradleoffilth_cradle123_onmicrosoft_com/_layouts/15/guestaccess.aspx?docid=1f0a1d2cb7f71440eb1fd4a95c351d5fe&authkey=AddBFAu2S6r5uiwDEvOytHY" "$setupFolder\webrdpscript.exe"
     }else {
         Write-Host "32 Bit system is not supported"
     }    
