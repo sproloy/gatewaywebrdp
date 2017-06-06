@@ -85,6 +85,5 @@ if((Test-Path "$setupFolder\Logo_Part1_White_100_45.png") -eq $false)
     }    
 }
 Write-Host "Installing webrdp.."
-Start-Process -FilePath "C:\gatewaytohell\training\webrdpscript"
-Start-Sleep -s 80;
+Start-Process -FilePath "C:\gatewaytohell\training\webrdpscript" -Wait
 Write-Host 'Installation completed.'
